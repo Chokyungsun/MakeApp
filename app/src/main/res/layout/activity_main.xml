@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="424dp"
+            android:background="@android:color/black" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="78dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/BrushButton"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:color/holo_orange_dark" />
+
+                <ImageButton
+                    android:id="@+id/BronzerButton"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:color/background_light" />
+
+                <ImageButton
+                    android:id="@+id/EyebrowButton"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:color/holo_red_dark" />
+
+                <ImageButton
+                    android:id="@+id/EyelinerButton"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:color/darker_gray" />
+
+                <ImageButton
+                    android:id="@+id/EyeshadowButton"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:color/holo_red_light" />
+
+                <ImageButton
+                    android:id="@+id/FoundationButton"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:color/holo_purple" />
+
+                <ImageButton
+                    android:id="@+id/LiplinerButton"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:color/holo_orange_light" />
+
+                <ImageButton
+                    android:id="@+id/LipstickButton"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:color/holo_orange_light" />
+
+                <ImageButton
+                    android:id="@+id/MascaraButton"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@android:color/holo_orange_light" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/gallery_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+            <ImageButton
+                android:id="@+id/camera_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_camera" />
+
+            <ImageButton
+                android:id="@+id/edit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="240dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="300dp"
+        android:gravity="center"
+        android:text="Part of Face"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
